@@ -1,7 +1,7 @@
 ![](https://raw.githubusercontent.com/DNonov/light-delight/master/media/icon-readme.png)
 
 ## Description
-Light VS Code theme inspired by Google's Chrome and Visual Studio.
+Light vim theme inspired by Google's Chrome and Visual Studio.
 
 ## Screenshots
 ### JavaScript
