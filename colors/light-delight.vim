@@ -327,6 +327,12 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
 	call <SID>X("jsExportDefault", s:blue, "", "")
 	call <SID>X("jsTemplateBraces", s:green, "", "")
 
+  " Bash Highlight
+	call <SID>X("shConditional", s:blue, "", "")
+	call <SID>X("shLoop", s:blue, "", "")
+	call <SID>X("shDerefSimple", s:blue, "", "")
+
+
   " Vim Script Highlighting
   call <SID>X("vimCommand", s:blue, "", "")
   call <SID>X("vimOper", s:foreground, "", "")
