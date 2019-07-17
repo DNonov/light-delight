@@ -331,6 +331,7 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
 	call <SID>X("shConditional", s:blue, "", "")
 	call <SID>X("shLoop", s:blue, "", "")
 	call <SID>X("shDerefSimple", s:blue, "", "")
+	call <SID>X("shDerefSimple", s:aqua, "", "")
 
 
   " Vim Script Highlighting
