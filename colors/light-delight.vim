@@ -308,6 +308,7 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
 	" JavaScript Highlighting
   call <SID>X("jsFunction", s:blue, "", "")
 	call <SID>X("jsConditional", s:blue, "", "")
+	call <SID>X("jsUndefined", s:blue, "", "")
 	call <SID>X("jsStatement", s:blue, "", "")
 	call <SID>X("jsLabel", s:blue, "", "")
 	call <SID>X("jsSuper", s:blue, "", "")
