@@ -288,6 +288,8 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
 
   "NERDTree slashes in nice blue color
 	call <SID>X("NERDTreeDirSlash",s:blue, "", "")
+  "NERDTree Flags are same color as dirs
+	call <SID>X("NERDTreeFlags",s:blue, "", "")
 
 	" Fix jsx bug (different color on closing tag)
 	hi link xmlEndTag xmlTag
