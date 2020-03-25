@@ -375,9 +375,13 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
 	call <SID>X("GitGutterDelete", s:red, "", "")
 
   " Coc
-	call <SID>X("CocErrorSign", s:background, s:red, "")
-	call <SID>X("CocWarningSign", s:background, s:yellow, "")
-	call <SID>X("CocInfoSign", s:background, s:aqua, "")
+  call <SID>X("CocFloating", s:foreground, s:selection, "")
+  call <SID>X("CocHoverRange", s:foreground, s:selection, "")
+  call <SID>X("CocCursorRange", s:foreground, s:selection, "")
+
+  " Vim Menu
+  call <SID>X("PMenu", s:foreground, s:selection, "")
+  call <SID>X("PMenuSel", s:foreground, s:selection, "")
 
 	" Delete Functions
 	delf <SID>X
