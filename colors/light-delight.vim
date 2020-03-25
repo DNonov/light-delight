@@ -374,6 +374,11 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
 	call <SID>X("GitGutterChange", s:aqua, "", "")
 	call <SID>X("GitGutterDelete", s:red, "", "")
 
+  " Coc
+	call <SID>X("CocErrorSign", s:foreground, s:red, "")
+	call <SID>X("CocWarningSign", s:foreground, s:yellow, "")
+	call <SID>X("CocInfoSign", s:foreground, s:aqua, "")
+
 	" Delete Functions
 	delf <SID>X
 	delf <SID>rgb
