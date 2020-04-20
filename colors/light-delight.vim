@@ -234,6 +234,7 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
 	call <SID>X("SpecialKey", s:selection, "", "")
 	call <SID>X("Search", s:foreground, s:selection, "")
 	call <SID>X("Error", s:background, s:red, "")
+	call <SID>X("ErrorMsg", s:background, s:red, "")
 	call <SID>X("TabLine", s:foreground, s:background, "reverse")
 	call <SID>X("StatusLine", s:window, s:blue, "reverse")
 	call <SID>X("StatusLineNC", s:window, s:foreground, "reverse")
