@@ -333,7 +333,7 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
 	call <SID>X("jsGlobalNodeObjects", s:purple, "", "")
 	call <SID>X("jsExportDefault", s:blue, "", "")
 	call <SID>X("jsTemplateBraces", s:green, "", "")
-	call <SID>X("jsRegexpString", s:green, "", "")
+	call <SID>X("jsRegexpString", s:orange, "", "")
 	call <SID>X("jsxAttrib", s:blue, "", "")
 	call <SID>X("jsxTagName", s:green, "", "")
 
