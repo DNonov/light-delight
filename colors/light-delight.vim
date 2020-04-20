@@ -343,6 +343,10 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
 	call <SID>X("cConditional", s:blue, "", "")
 	call <SID>X("cLabel", s:blue, "", "")
 
+  "Clojure Highlighting
+	call <SID>X("clojureSpecial", s:blue, "", "")
+	call <SID>X("clojureDefine", s:blue, "", "")
+
   " Bash Highlight
 	call <SID>X("shConditional", s:blue, "", "")
 	call <SID>X("shLoop", s:blue, "", "")
@@ -363,7 +367,7 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
 	call <SID>X("htmlTitle", s:orange, "", "")
 	call <SID>X("htmlH1", s:orange, "", "")
 
-  " CSS Hightlighting
+  " CSS Highlighting
 	call <SID>X("cssTagName", s:blue, "", "")
 	call <SID>X("cssBraces", s:foreground, "", "")
 	call <SID>X("cssProp", s:foreground, "", "")
