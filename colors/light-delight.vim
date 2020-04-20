@@ -357,8 +357,8 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
 	call <SID>X("htmlTagName", s:green, "", "")
 	call <SID>X("htmlArg", s:blue, "", "")
 	call <SID>X("htmlScriptTag", s:red, "", "")
-	call <SID>X("htmlTitle", s:foreground, "", "")
-	call <SID>X("htmlH1", s:foreground, "", "")
+	call <SID>X("htmlTitle", s:orange, "", "")
+	call <SID>X("htmlH1", s:orange, "", "")
 
   " CSS Hightlighting
 	call <SID>X("cssTagName", s:blue, "", "")
