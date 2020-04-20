@@ -306,6 +306,8 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
 	call <SID>X("pythonBuiltinType", s:purple, "", "")
 	call <SID>X("pythonBuiltinObj", s:blue, "", "")
 	call <SID>X("pythonRepeat", s:blue, "", "")
+	call <SID>X("pythonException", s:blue, "", "")
+	call <SID>X("pythonClassVar", s:blue, "", "")
 
 	" JavaScript Highlighting
   call <SID>X("jsFunction", s:blue, "", "")
