@@ -412,7 +412,7 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
   call <SID>X("CocCursorRange", s:foreground, s:selection, "")
 
   " Spellunker
-  call <SID>X("SpellunkerSpellBad", "", "", s:underline)
+  call <SID>X("SpellunkerSpellBad", "", "", "underline")
 
   " Vim Menu
   call <SID>X("PMenu", s:foreground, s:selection, "")
