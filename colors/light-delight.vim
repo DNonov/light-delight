@@ -411,6 +411,9 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
   call <SID>X("CocHoverRange", s:foreground, s:selection, "")
   call <SID>X("CocCursorRange", s:foreground, s:selection, "")
 
+  " Spellunker
+  call <SID>X("SpellunkerSpellBad", "", "", s:underline)
+
   " Vim Menu
   call <SID>X("PMenu", s:foreground, s:selection, "")
   call <SID>X("PMenuSel", s:foreground, s:selection, "")
