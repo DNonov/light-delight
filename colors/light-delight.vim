@@ -329,6 +329,14 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
 	call <SID>X("jsGlobalNodeObjects", s:purple, "", "")
 	call <SID>X("jsExportDefault", s:blue, "", "")
 	call <SID>X("jsTemplateBraces", s:green, "", "")
+	call <SID>X("jsxAttrib", s:blue, "", "")
+	call <SID>X("jsxTagName", s:green, "", "")
+
+  " C Highlighting
+	call <SID>X("cRepeat", s:blue, "", "")
+	call <SID>X("cStatement", s:blue, "", "")
+	call <SID>X("cConditional", s:blue, "", "")
+	call <SID>X("cLabel", s:blue, "", "")
 
   " Bash Highlight
 	call <SID>X("shConditional", s:blue, "", "")
@@ -347,6 +355,8 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
 	call <SID>X("htmlTagName", s:green, "", "")
 	call <SID>X("htmlArg", s:blue, "", "")
 	call <SID>X("htmlScriptTag", s:red, "", "")
+	call <SID>X("htmlTitle", s:foreground, "", "")
+	call <SID>X("htmlH1", s:foreground, "", "")
 
   " CSS Hightlighting
 	call <SID>X("cssTagName", s:blue, "", "")
@@ -359,6 +369,10 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
 	call <SID>X("xmlAttrib", s:blue, "", "")
 	call <SID>X("xmlEndTag", s:comment, "", "")
 
+  " Markdown Hightlighting
+	call <SID>X("mkdHeading", s:blue, "", "")
+	call <SID>X("mkdCode", s:foreground, "", "")
+
   " Vim Highlighting
   call <SID>X("vimFunction", s:aqua, "", "")
   call <SID>X("vimUserFunc", s:aqua, "", "")
@@ -366,8 +380,14 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
   call <SID>X("vimFuncSID", s:aqua, "", "")
 
   " Diff Highlighting
+	call <SID>X("DiffAdd", s:green, "", "")
+	call <SID>X("DiffDelete", s:red, "", "")
+	call <SID>X("DiffChange", s:yellow, "", "")
+	call <SID>X("DiffText", s:foreground, "", "")
+
 	call <SID>X("diffAdded", s:green, "", "")
 	call <SID>X("diffRemoved", s:red, "", "")
+	call <SID>X("diffChanged", s:yellow, "", "")
 
   " GitGutter
 	call <SID>X("GitGutterAdd", s:green, "", "")
