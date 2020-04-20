@@ -374,6 +374,9 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
 	call <SID>X("xmlAttrib", s:blue, "", "")
 	call <SID>X("xmlEndTag", s:comment, "", "")
 
+  " Yaml Hightlighting
+	call <SID>X("yamlKey", s:comment, "", "")
+
   " Markdown Hightlighting
 	call <SID>X("mkdHeading", s:blue, "", "")
 	call <SID>X("mkdCode", s:foreground, "", "")
