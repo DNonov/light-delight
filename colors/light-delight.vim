@@ -337,6 +337,18 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
 	call <SID>X("jsxAttrib", s:blue, "", "")
 	call <SID>X("jsxTagName", s:green, "", "")
 
+  " TypeScript Highlighting
+	call <SID>X("typescriptAbstract", s:blue, "", "")
+	call <SID>X("typescriptClassName", s:purple, "", "")
+	call <SID>X("typescriptStatementKeyword", s:blue, "", "")
+	call <SID>X("typescriptBraces", s:foreground, "", "")
+	call <SID>X("typescriptIdentifier", s:blue, "", "")
+	call <SID>X("typescriptIdentifierName", s:purple, "", "")
+	call <SID>X("typescriptTypeReference", s:purple, "", "")
+	call <SID>X("typescriptVariable", s:blue, "", "")
+	call <SID>X("typescriptVariableDeclaration", s:foreground, "", "")
+	call <SID>X("typescriptOperator", s:blue, "", "")
+
   " C Highlighting
 	call <SID>X("cRepeat", s:blue, "", "")
 	call <SID>X("cStatement", s:blue, "", "")
