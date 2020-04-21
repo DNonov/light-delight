@@ -353,7 +353,6 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
 	call <SID>X("shDerefSimple", s:blue, "", "")
 	call <SID>X("shDerefSimple", s:aqua, "", "")
 
-
   " Vim Script Highlighting
   call <SID>X("vimCommand", s:blue, "", "")
   call <SID>X("vimOper", s:foreground, "", "")
@@ -378,10 +377,10 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
 	call <SID>X("xmlAttrib", s:blue, "", "")
 	call <SID>X("xmlEndTag", s:comment, "", "")
 
-  " Yaml Hightlighting
+  " Yaml Highlighting
 	call <SID>X("yamlKey", s:blue, "", "")
 
-  " Markdown Hightlighting
+  " Markdown Highlighting
 	call <SID>X("mkdHeading", s:blue, "", "")
 	call <SID>X("mkdCode", s:foreground, "", "")
 
@@ -411,7 +410,7 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
   call <SID>X("CocHoverRange", s:foreground, s:selection, "")
   call <SID>X("CocCursorRange", s:foreground, s:selection, "")
 
-  " Spellunker
+  " Spelunker
   " TODO: This need to be done with call.
   highlight SpelunkerSpellBad cterm=underline gui=underline
 
