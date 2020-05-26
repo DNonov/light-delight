@@ -251,7 +251,7 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
 	call <SID>X("FoldColumn", "", s:background, "")
 	call <SID>X("PMenu", s:foreground, s:selection, "none")
   call <SID>X("CursorLine", "", s:selection, "none")
-  call <SID>X("CursorColumn", "", s:selection, "none")
+  call <SID>X("ColorColumn", "", s:selection, "none")
   call <SID>X("PMenuSel", s:foreground, s:selection, "reverse")
 
 	call <SID>X("Comment", s:comment, "", "")
