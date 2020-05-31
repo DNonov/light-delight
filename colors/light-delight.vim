@@ -365,7 +365,7 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
 	call <SID>X("typescriptBranch", s:blue, "", "")
 	call <SID>X("typescriptAssign", s:blue, "", "")
 	call <SID>X("typescriptBinaryOp", s:blue, "", "")
-	call <SID>X("typescriptRegexpString", s:red, "", "")
+	call <SID>X("typescriptRegexpString", s:orange, "", "")
 	call <SID>X("typescriptImport", s:blue, "", "")
 	call <SID>X("typescriptFrom", s:blue, "", "")
 	call <SID>X("typescriptIdentifierName", s:purple, "", "")
