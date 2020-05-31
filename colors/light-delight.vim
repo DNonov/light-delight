@@ -227,7 +227,7 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
 		endif
 	endfun
 
-	" Vim Highlighting
+	" Vim Highlight
 	call <SID>X("Normal", s:foreground, s:background, "")
   highlight LineNr term=bold cterm=NONE ctermfg=DarkGrey ctermbg=NONE gui=NONE guifg=DarkGrey guibg=NONE
   highlight! link SignColumn LineNr
@@ -292,7 +292,7 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
 	" Fix jsx bug (different color on closing tag)
 	hi link xmlEndTag xmlTag
 
-	" Python Highlighting
+	" Python Highlight
 	call <SID>X("pythonInclude", s:blue, "", "")
 	call <SID>X("pythonStatement", s:blue, "", "")
 	call <SID>X("pythonConditional", s:blue, "", "")
@@ -310,7 +310,7 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
 	call <SID>X("pythonClassVar", s:blue, "", "")
 	call <SID>X("pythonDottedName", s:purple, "", "")
 
-	" JavaScript Highlighting
+	" JavaScript Highlight
   call <SID>X("jsFunction", s:blue, "", "")
 	call <SID>X("jsConditional", s:blue, "", "")
 	call <SID>X("jsUndefined", s:blue, "", "")
@@ -340,18 +340,7 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
 	call <SID>X("jsxEqual", s:blue, "", "")
 	call <SID>X("jsBuiltins", s:purple, "", "")
 
-  " TypeScript Highlighting
-	" call <SID>X("typescriptAbstract", s:blue, "", "")
-	" call <SID>X("typescriptClassName", s:purple, "", "")
-	" call <SID>X("typescriptStatementKeyword", s:blue, "", "")
-	" call <SID>X("typescriptBraces", s:foreground, "", "")
-	" call <SID>X("typescriptIdentifier", s:blue, "", "")
-	" call <SID>X("typescriptIdentifierName", s:purple, "", "")
-	" call <SID>X("typescriptTypeReference", s:purple, "", "")
-	" call <SID>X("typescriptVariable", s:blue, "", "")
-	" call <SID>X("typescriptVariableDeclaration", s:foreground, "", "")
-	" call <SID>X("typescriptOperator", s:blue, "", "")
-  " --------------------------------------------------------
+  " TypeScript Highlight
 	call <SID>X("typescriptClassName", s:purple, "", "")
 	call <SID>X("typescriptClassStatic", s:blue, "", "")
 	call <SID>X("typescriptBraces", s:foreground, "", "")
@@ -379,15 +368,30 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
 	call <SID>X("typescriptArrayMethod", s:aqua, "", "")
 	call <SID>X("typescriptES6SetMethod", s:aqua, "", "")
 
-  " C Highlighting
+  " C Highlight
 	call <SID>X("cRepeat", s:blue, "", "")
 	call <SID>X("cStatement", s:blue, "", "")
 	call <SID>X("cConditional", s:blue, "", "")
 	call <SID>X("cLabel", s:blue, "", "")
+	call <SID>X("cOperator", s:blue, "", "")
 
-  "Clojure Highlighting
+  " Ruby Highlight
+	call <SID>X("rubyClass", s:blue, "", "")
+	call <SID>X("rubyModule", s:blue, "", "")
+	call <SID>X("rubyDefine", s:blue, "", "")
+	call <SID>X("rubySymbol", s:aqua, "", "")
+	call <SID>X("rubyKeywordAsMethod", s:yellow, "", "")
+	call <SID>X("rubyStringDelimiter", s:red, "", "")
+	call <SID>X("rubyRegexpDelimiter", s:yellow, "", "")
+	call <SID>X("rubyConditional", s:blue, "", "")
+	call <SID>X("rubyInstanceVariable", s:aqua, "", "")
+
+  "Clojure Highlight
 	call <SID>X("clojureSpecial", s:blue, "", "")
 	call <SID>X("clojureDefine", s:blue, "", "")
+	call <SID>X("clojureCond", s:blue, "", "")
+	call <SID>X("clojureException", s:blue, "", "")
+	call <SID>X("clojureKeyword", s:aqua, "", "")
 
   " Bash Highlight
 	call <SID>X("shConditional", s:blue, "", "")
@@ -395,11 +399,11 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
 	call <SID>X("shDerefSimple", s:blue, "", "")
 	call <SID>X("shDerefSimple", s:aqua, "", "")
 
-  " Vim Script Highlighting
+  " Vim Script Highlight
   call <SID>X("vimCommand", s:blue, "", "")
   call <SID>X("vimOper", s:foreground, "", "")
 
-	" HTML Highlighting
+	" HTML Highlight
 	call <SID>X("htmlTag", s:comment, "", "")
 	call <SID>X("htmlEndTag", s:comment, "", "")
 	call <SID>X("htmlTagName", s:green, "", "")
@@ -408,31 +412,39 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
 	call <SID>X("htmlTitle", s:orange, "", "")
 	call <SID>X("htmlH1", s:orange, "", "")
 
-  " CSS Highlighting
+  " CSS Highlight
 	call <SID>X("cssTagName", s:blue, "", "")
 	call <SID>X("cssBraces", s:foreground, "", "")
 	call <SID>X("cssProp", s:foreground, "", "")
 
-	" XML Highlighting
+	" XML Highlight
 	call <SID>X("xmlTag", s:comment, "", "")
 	call <SID>X("xmlTagName", s:green, "", "")
 	call <SID>X("xmlAttrib", s:blue, "", "")
 	call <SID>X("xmlEndTag", s:comment, "", "")
 
-  " Yaml Highlighting
+  " Yaml Highlight
 	call <SID>X("yamlKey", s:blue, "", "")
 
-  " Markdown Highlighting
+  " Markdown Highlight
 	call <SID>X("mkdHeading", s:blue, "", "")
 	call <SID>X("mkdCode", s:foreground, "", "")
+	call <SID>X("mkdLink", s:aqua, "", "underline")
+	call <SID>X("mkdInlineURL", s:aqua, "", "underline")
+	call <SID>X("htmlH1", s:blue, "", "")
 
-  " Vim Highlighting
+  " Vim Highlight
   call <SID>X("vimFunction", s:aqua, "", "")
   call <SID>X("vimUserFunc", s:aqua, "", "")
   call <SID>X("vimNotation", s:aqua, "", "")
   call <SID>X("vimFuncSID", s:aqua, "", "")
 
-  " Diff Highlighting
+  " Nginx.conf Highlight
+  call <SID>X("ngxDirectiveBlock", s:blue, "", "")
+  call <SID>X("ngxDirectiveImportant", s:blue, "", "")
+  call <SID>X("ngxDirective", s:blue, "", "")
+
+  " Diff Highlight
 	call <SID>X("DiffAdd", s:green, "", "")
 	call <SID>X("DiffDelete", s:red, "", "")
 	call <SID>X("DiffChange", s:yellow, "", "")
@@ -459,6 +471,9 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
   " Vim Menu
   call <SID>X("PMenu", s:foreground, s:selection, "")
   call <SID>X("PMenuSel", s:foreground, s:selection, "")
+
+  " Magit
+	call <SID>X("fileEntry", s:blue, "", "")
 
 	" Delete Functions
 	delf <SID>X
