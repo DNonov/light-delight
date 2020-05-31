@@ -309,6 +309,7 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
 	call <SID>X("pythonException", s:blue, "", "")
 	call <SID>X("pythonClassVar", s:blue, "", "")
 	call <SID>X("pythonDottedName", s:purple, "", "")
+	call <SID>X("pythonDecorator", s:purple, "", "")
 
 	" JavaScript Highlight
   call <SID>X("jsFunction", s:blue, "", "")
