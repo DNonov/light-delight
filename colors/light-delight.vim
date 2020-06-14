@@ -231,7 +231,7 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
 	call <SID>X("Normal", s:foreground, s:background, "")
   highlight LineNr term=bold cterm=NONE ctermfg=DarkGrey ctermbg=NONE gui=NONE guifg=DarkGrey guibg=NONE
   highlight! link SignColumn LineNr
-	call <SID>X("NonText", s:selection, "", "")
+	call <SID>X("NonText", s:comment, "", "")
 	call <SID>X("SpecialKey", s:selection, "", "")
 	call <SID>X("Search", s:foreground, s:selection, "")
 	call <SID>X("Error", s:background, s:red, "")
